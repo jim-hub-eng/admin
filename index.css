@@ -40,7 +40,6 @@ body{
     height: 100%;
     background-color: transparent;
     padding: 10px;
-    top: 50px;
 }
 .box-2{
     position: relative;
@@ -121,6 +120,7 @@ body{
     justify-content: space-around;
 }
 .content{
+    position: relative;
     width: 50%;
     height: auto;
     display: flex;
@@ -183,6 +183,9 @@ body{
     border: 1px solid black;
 }
 @media(max-width: 710px) {
+    .box-1{
+        top: 50px;
+    }
     .box-2{
         width: 100%;
         height: 100%;
@@ -191,10 +194,21 @@ body{
         flex-direction: column;
     }
     .content{
-        width: 90%;
+        width: 100%;
+        left: -20px;
+
+        .box-input{
+            label{
+                left: -10px;
+            }
+        }
+
     }
     .content-2{
         margin-top: 50px;
+    }
+    .box-btn button{
+        width: 90%;
     }
 }
 @media(max-width: 590px){
@@ -208,8 +222,23 @@ body{
     }
 }
 @media(max-width: 480px){
+    .title-1{
+        flex-direction: column;
+    }
+    .box-registrar{
+        margin-top: 40px;
+    }
     .box-tabla table{
         transform: scale(0.6);
+    }
+}
+@media(max-width: 350px){
+    .content{
+        .box-input{
+            label{
+                left: -25px;
+            }
+        }
     }
 }
 /* CAJA DOS */
@@ -303,7 +332,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 93%;
-    height: 60px;
+    height: 200px;
     margin-top: 20px;
     background-color: transparent;
 
