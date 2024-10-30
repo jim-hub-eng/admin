@@ -111,6 +111,20 @@ body{
     height: auto;
     padding: 10px;
 }
+.box-btn-admin{
+    button{
+        padding: 7px 40px;
+        background-color: transparent;
+        color: rgb(255, 70, 70);
+        border: 1px solid rgb(255, 70, 70);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(255, 70, 70);
+        color: white;
+    }
+}
 .container{
     width: 100%;
     height: auto;
@@ -155,10 +169,12 @@ body{
         padding: 5px;
         transition: .3s;
     }
-    input:focus{
+    input:focus,
+    input:valid{
         border-color: royalblue;
     }
-    input:focus ~label{
+    input:focus ~label,
+    input:valid ~label{
         transform: translateY(-20px);
         color: black;
     }
